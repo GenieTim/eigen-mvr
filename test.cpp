@@ -33,7 +33,6 @@ int main(int argc, char const *argv[]) {
       Eigen::SparseMatrix<double>(nRows, nRows);
   sparseA.setFromTriplets(triplets.begin(), triplets.end());
 
-
   Eigen::MatrixXd A = Eigen::MatrixXd(sparseA);
   Eigen::VectorXd eigenvaluesMemory = Eigen::VectorXd::Zero(nRows);
   Eigen::MatrixXd eigenvectorsMemory = includeEigenvectors
